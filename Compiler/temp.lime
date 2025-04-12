@@ -1,0 +1,34 @@
+fun main() set int {
+    define x: int be 7 end
+    define y: int be 3 end
+
+    printf "Checking arithmetic operations..." end
+    define sum: int be x + y end
+    define product: int be x * y end
+
+    printf "Sum: " sum end
+    printf "Product: " product end
+
+    if sum > product {
+        printf "Sum is greater than product" end
+    } else {
+        printf "Product is greater than sum" end
+    }
+
+    fun square(n: int) set int {
+        give n * n end
+    }
+
+    define squared: int be square(y) end
+    printf "Square of y: " squared end
+
+    define counter: int be 0 end
+    while counter < 3 {
+        printf "Loop iteration: " counter end
+        counter = counter + 1 end
+    }
+
+    printf "Program execution complete" end
+
+    give sum end
+}

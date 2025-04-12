@@ -1,0 +1,31 @@
+fun main() set int {
+    define x: int be 10 end
+    define y: int be 5 end
+
+    printf "Starting the program..." end 
+
+    if x > y {
+        printf "X is greater than Y" end
+    } else {
+        printf "X is not greater than Y" end
+    }
+
+    fun sum(a: int, b: int) set int {
+        printf "Inside function sum()" end
+        give a + b end 
+    }
+
+    define result: int be sum(x, y) end
+    printf "Result of sum function: " result end 
+
+    define i: int be 0 end
+    while i < 3 {
+        printf "Loop iteration: " i end 
+        i = i + 1 end
+    }
+
+    printf "Ending program execution..." end 
+
+    give result end 
+
+}

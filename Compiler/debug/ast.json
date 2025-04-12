@@ -1,0 +1,75 @@
+{
+    "type": "Program",
+    "statements": [
+        {
+            "FunctionStatement": {
+                "type": "FunctionStatement",
+                "name": {
+                    "type": "IdentifierLiteral",
+                    "value": "test"
+                },
+                "return_type": "int",
+                "parameters": [],
+                "body": {
+                    "type": "BlockStatement",
+                    "statements": [
+                        {
+                            "type": "ExpressionStatement",
+                            "expr": {
+                                "type": "IdentifierLiteral",
+                                "value": "printf"
+                            }
+                        },
+                        {
+                            "type": "ExpressionStatement",
+                            "expr": {
+                                "type": "StringLiteral",
+                                "value": "Step 1"
+                            }
+                        },
+                        {
+                            "type": "LetStatement",
+                            "name": {
+                                "type": "IdentifierLiteral",
+                                "value": "x"
+                            },
+                            "value": {
+                                "type": "IntegerLiteral",
+                                "value": 10
+                            },
+                            "value_type": "int"
+                        },
+                        {
+                            "type": "ExpressionStatement",
+                            "expr": {
+                                "type": "IdentifierLiteral",
+                                "value": "printf"
+                            }
+                        },
+                        {
+                            "type": "ExpressionStatement",
+                            "expr": {
+                                "type": "StringLiteral",
+                                "value": "Step 2: "
+                            }
+                        },
+                        {
+                            "type": "ExpressionStatement",
+                            "expr": {
+                                "type": "IdentifierLiteral",
+                                "value": "x"
+                            }
+                        },
+                        {
+                            "type": "ReturnStatement",
+                            "return_value": {
+                                "type": "IdentifierLiteral",
+                                "value": "x"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
